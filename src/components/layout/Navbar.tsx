@@ -13,8 +13,18 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
-            <span className="text-comic text-3xl text-primary mr-1">HERO</span>
-            <span className="text-comic text-3xl text-secondary">MERCH</span>
+            <span className="text-comic text-3xl text-primary mr-1">ZIDIO</span>
+            <div className="flex text-comic text-3xl">
+              <span className="text-secondary" style={{fontFamily: 'Bangers'}}>C</span>
+              <span className="text-accent" style={{fontFamily: 'Poppins', fontStyle: 'italic'}}>l</span>
+              <span className="text-primary" style={{fontWeight: 'bold'}}>o</span>
+              <span className="text-secondary" style={{textDecoration: 'underline'}}>t</span>
+              <span className="text-accent" style={{letterSpacing: '2px'}}>h</span>
+              <span className="text-primary" style={{fontStyle: 'italic'}}>i</span>
+              <span className="text-secondary" style={{textTransform: 'uppercase'}}>n</span>
+              <span className="text-accent" style={{fontWeight: 'bold'}}>g</span>
+              <span className="text-primary" style={{textShadow: '1px 1px 2px rgba(255,255,255,0.5)'}}>s</span>
+            </div>
           </Link>
         </div>
         

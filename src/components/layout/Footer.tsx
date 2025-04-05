@@ -9,8 +9,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <Link to="/" className="flex items-center mb-4">
-              <span className="text-comic text-3xl text-primary mr-1">HERO</span>
-              <span className="text-comic text-3xl text-secondary">MERCH</span>
+              <span className="text-comic text-3xl text-primary mr-1">ZIDIO</span>
+              <div className="flex text-comic text-2xl">
+                <span className="text-secondary" style={{fontFamily: 'Bangers'}}>C</span>
+                <span className="text-accent" style={{fontFamily: 'Poppins', fontStyle: 'italic'}}>l</span>
+                <span className="text-primary" style={{fontWeight: 'bold'}}>o</span>
+                <span className="text-secondary" style={{textDecoration: 'underline'}}>t</span>
+                <span className="text-accent" style={{letterSpacing: '2px'}}>h</span>
+                <span className="text-primary" style={{fontStyle: 'italic'}}>i</span>
+                <span className="text-secondary" style={{textTransform: 'uppercase'}}>n</span>
+                <span className="text-accent" style={{fontWeight: 'bold'}}>g</span>
+                <span className="text-primary" style={{textShadow: '1px 1px 2px rgba(255,255,255,0.5)'}}>s</span>
+              </div>
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
               Your one-stop shop for superhero merchandise inspired by your favorite comic universes.
@@ -102,7 +112,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border/40 pt-8 mt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} HeroMerch. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ZIDIO Clothings. All rights reserved.</p>
           <div className="flex justify-center mt-4 space-x-4">
             <Link to="/privacy" className="hover:text-primary">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-primary">Terms of Service</Link>
