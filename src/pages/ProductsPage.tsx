@@ -11,7 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
-// Sample product data
+// Sample product data - only t-shirts
 const sampleProducts = [
   {
     id: 1,
@@ -64,23 +64,6 @@ const sampleProducts = [
     rating: 4.3,
     isNew: true,
   },
-  {
-    id: 7,
-    name: "Hulk Smash Tee",
-    price: 28.99,
-    image: "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRzaGlydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    universe: "marvel" as const,
-    rating: 4.2,
-  },
-  {
-    id: 8,
-    name: "Wonder Woman Tee",
-    price: 27.99,
-    image: "https://images.unsplash.com/photo-1618354691438-25bc04584c23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dHNoaXJ0JTIwcmVkfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-    universe: "dc" as const,
-    rating: 4.7,
-    isNew: true,
-  },
 ];
 
 const ProductsPage = () => {
@@ -125,9 +108,9 @@ const ProductsPage = () => {
       
       <main className="flex-grow container py-8">
         <div className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-comic mb-2">SUPERHERO GEAR</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-comic mb-2">SUPERHERO TEES</h1>
           <p className="text-muted-foreground">
-            Find your favorite superhero merchandise and show off your inner hero!
+            Find your favorite superhero t-shirts and show off your inner hero!
           </p>
         </div>
         
@@ -137,7 +120,7 @@ const ProductsPage = () => {
             <div className="w-full md:w-auto flex items-center">
               <div className="relative flex-1 md:w-80">
                 <Input
-                  placeholder="Search products..."
+                  placeholder="Search t-shirts..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="pl-10 pr-4 py-2"
@@ -208,7 +191,7 @@ const ProductsPage = () => {
               </div>
             ) : (
               <div className="text-center py-20">
-                <h3 className="text-2xl font-semibold mb-2">No products found</h3>
+                <h3 className="text-2xl font-semibold mb-2">No t-shirts found</h3>
                 <p className="text-muted-foreground">
                   Try changing your search or filter criteria.
                 </p>
@@ -219,7 +202,7 @@ const ProductsPage = () => {
         
         {/* Mobile Filters Dialog */}
         {showFilters && (
-          <div className="fixed inset-0 z-50 bg-background p-4 md:hidden overflow-auto">
+          <div className="fixed inset-0 z-50 bg-black p-4 md:hidden overflow-auto">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-semibold">Filters</h2>
               <Button variant="ghost" size="sm" onClick={toggleFilters}>

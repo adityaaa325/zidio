@@ -4,22 +4,22 @@ import { Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-muted/40 border-t border-border/40 pt-12 pb-8">
+    <footer className="bg-black/60 border-t border-border/40 pt-12 pb-8">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <Link to="/" className="flex items-center mb-4">
-              <span className="text-comic text-3xl text-primary mr-1">ZIDIO</span>
-              <div className="flex text-comic text-2xl">
-                <span className="text-secondary" style={{fontFamily: 'Bangers'}}>C</span>
-                <span className="text-accent" style={{fontFamily: 'Poppins', fontStyle: 'italic'}}>l</span>
-                <span className="text-primary" style={{fontWeight: 'bold'}}>o</span>
-                <span className="text-secondary" style={{textDecoration: 'underline'}}>t</span>
-                <span className="text-accent" style={{letterSpacing: '2px'}}>h</span>
-                <span className="text-primary" style={{fontStyle: 'italic'}}>i</span>
-                <span className="text-secondary" style={{textTransform: 'uppercase'}}>n</span>
-                <span className="text-accent" style={{fontWeight: 'bold'}}>g</span>
-                <span className="text-primary" style={{textShadow: '1px 1px 2px rgba(255,255,255,0.5)'}}>s</span>
+            <Link to="/" className="flex flex-col items-start mb-4">
+              <span className="text-comic text-4xl text-primary mr-1 mb-1">ZIDIO</span>
+              <div className="flex text-comic text-3xl">
+                <span className="text-red-600" title="Captain America" style={{fontFamily: 'Bangers', textShadow: '1px 1px 2px #fff'}}>C</span>
+                <span className="text-yellow-400" title="Loki" style={{fontFamily: 'Poppins', fontStyle: 'italic', transform: 'skewX(-15deg)'}}>l</span>
+                <span className="text-green-500" title="Hulk" style={{fontWeight: 'bold', letterSpacing: '-1px'}}>o</span>
+                <span className="text-blue-500" title="Thor" style={{textDecoration: 'underline', textDecorationThickness: '3px'}}>t</span>
+                <span className="text-purple-500" title="Naruto" style={{letterSpacing: '2px', fontFamily: 'Arial', fontWeight: 'bold'}}>h</span>
+                <span className="text-pink-400" title="Iron Man" style={{fontStyle: 'italic', textShadow: '0 0 3px #f00'}}>i</span>
+                <span className="text-orange-500" title="Goku" style={{textTransform: 'uppercase', fontFamily: 'Impact'}}>n</span>
+                <span className="text-teal-400" title="Batman" style={{fontWeight: 'bold', letterSpacing: '-1px'}}>g</span>
+                <span className="text-indigo-400" title="Spider-Man" style={{textShadow: '1px 1px 2px rgba(255,255,255,0.5)', fontFamily: 'Comic Sans MS'}}>s</span>
               </div>
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
@@ -58,7 +58,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/products" className="text-muted-foreground hover:text-primary">
-                  All Products
+                  All T-Shirts
                 </Link>
               </li>
             </ul>
@@ -103,7 +103,7 @@ const Footer = () => {
               />
               <button 
                 type="submit" 
-                className="bg-primary text-white rounded-r-md px-4 py-2 text-sm hover:bg-primary/80"
+                className="bg-primary text-black rounded-r-md px-4 py-2 text-sm hover:bg-primary/80"
               >
                 Sign Up
               </button>

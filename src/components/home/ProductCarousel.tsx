@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import ProductCard from '@/components/products/ProductCard';
 
-// Sample product data
+// Sample product data - only t-shirts
 const sampleProducts = [
   {
     id: 1,
@@ -97,7 +97,7 @@ const ProductCarousel = () => {
   return (
     <div className="relative">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-comic">FEATURED GEAR</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-comic">FEATURED TEES</h2>
         
         <div className="flex space-x-2">
           <button

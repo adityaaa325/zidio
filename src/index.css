@@ -7,13 +7,13 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 98%;
     
-    --card: 240 10% 3.9%;
+    --card: 0 0% 3%;
     --card-foreground: 0 0% 98%;
     
-    --popover: 240 10% 3.9%;
+    --popover: 0 0% 3%;
     --popover-foreground: 0 0% 98%;
     
     --primary: 221 83% 53%;
@@ -22,7 +22,7 @@
     --secondary: 217 91% 60%;
     --secondary-foreground: 0 0% 98%;
     
-    --muted: 240 3.7% 15.9%;
+    --muted: 0 0% 15%;
     --muted-foreground: 240 5% 64.9%;
     
     --accent: 265 89% 78%;
@@ -31,8 +31,8 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
     --ring: 240 4.9% 83.9%;
     
     --radius: 0.75rem;
@@ -44,7 +44,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-foreground;
     font-family: 'Poppins', sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
@@ -55,7 +55,8 @@
 
 @layer utilities {
   .starry-bg {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect width="100%" height="100%" fill="%231e293b"/><g fill="%23ffffff" opacity="0.3"><circle cx="10%" cy="20%" r="1"/><circle cx="30%" cy="40%" r="0.8"/><circle cx="25%" cy="10%" r="0.7"/><circle cx="65%" cy="5%" r="0.6"/><circle cx="80%" cy="30%" r="0.9"/><circle cx="45%" cy="15%" r="0.6"/><circle cx="90%" cy="60%" r="0.7"/><circle cx="15%" cy="60%" r="0.8"/><circle cx="35%" cy="75%" r="0.7"/><circle cx="50%" cy="50%" r="0.6"/><circle cx="75%" cy="85%" r="0.9"/><circle cx="55%" cy="30%" r="0.6"/><circle cx="95%" cy="80%" r="0.7"/><circle cx="60%" cy="70%" r="0.8"/></g></svg>');
+    background-color: black;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect width="100%" height="100%" fill="%23000"/><g fill="%23ffffff" opacity="0.3"><circle cx="10%" cy="20%" r="1"/><circle cx="30%" cy="40%" r="0.8"/><circle cx="25%" cy="10%" r="0.7"/><circle cx="65%" cy="5%" r="0.6"/><circle cx="80%" cy="30%" r="0.9"/><circle cx="45%" cy="15%" r="0.6"/><circle cx="90%" cy="60%" r="0.7"/><circle cx="15%" cy="60%" r="0.8"/><circle cx="35%" cy="75%" r="0.7"/><circle cx="50%" cy="50%" r="0.6"/><circle cx="75%" cy="85%" r="0.9"/><circle cx="55%" cy="30%" r="0.6"/><circle cx="95%" cy="80%" r="0.7"/><circle cx="60%" cy="70%" r="0.8"/></g></svg>');
   }
   
   .animate-float {
@@ -75,14 +76,14 @@
   }
   
   .hero-gradient {
-    background: linear-gradient(to right, rgba(30, 41, 59, 0.9), rgba(17, 24, 39, 0.8)), 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), 
                 url('/assets/starry-night-texture.jpg');
     background-size: cover;
     background-position: center;
   }
   
   .starry-gradient {
-    background: linear-gradient(135deg, #172554 0%, #1e3a8a 25%, #3b82f6 100%);
+    background: linear-gradient(135deg, #000000 0%, #0f172a 25%, #1e3a8a 100%);
   }
   
   .product-card-shadow {
