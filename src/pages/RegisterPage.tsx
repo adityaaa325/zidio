@@ -1,8 +1,7 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Eye, EyeOff, ArrowRight, Google } from 'lucide-react';
+import { Eye, EyeOff, ArrowRight, Mail } from 'lucide-react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -33,7 +32,6 @@ const RegisterPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validate password match
     if (formData.password !== formData.confirmPassword) {
       toast({
         title: "Passwords do not match",
@@ -43,7 +41,6 @@ const RegisterPage = () => {
       return;
     }
     
-    // Validate terms agreement
     if (!agreeTerms) {
       toast({
         title: "Please agree to the terms",
@@ -55,11 +52,9 @@ const RegisterPage = () => {
     
     setIsLoading(true);
     
-    // Simulate API call
     setTimeout(() => {
       setIsLoading(false);
       
-      // Mock successful registration
       toast({
         title: "Registration Successful",
         description: "Welcome to HeroMerch! Your account has been created.",
@@ -70,11 +65,9 @@ const RegisterPage = () => {
   const handleGoogleRegister = () => {
     setIsLoading(true);
     
-    // Simulate API call
     setTimeout(() => {
       setIsLoading(false);
       
-      // Mock successful registration
       toast({
         title: "Google Registration Successful",
         description: "Welcome to HeroMerch! Your account has been created.",
@@ -222,7 +215,7 @@ const RegisterPage = () => {
                 onClick={handleGoogleRegister}
                 disabled={isLoading}
               >
-                <Google size={18} />
+                <Mail size={18} />
                 Sign up with Google
               </Button>
             </form>

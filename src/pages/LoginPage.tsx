@@ -1,8 +1,7 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Eye, EyeOff, ArrowRight, Google } from 'lucide-react';
+import { Eye, EyeOff, ArrowRight, Mail } from 'lucide-react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -137,7 +136,7 @@ const LoginPage = () => {
                 onClick={handleGoogleLogin}
                 disabled={isLoading}
               >
-                <Google size={18} />
+                <Mail size={18} />
                 Continue with Google
               </Button>
             </form>
